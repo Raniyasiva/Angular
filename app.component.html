@@ -1,0 +1,36 @@
+
+
+<table>
+  <thead>
+    <tr>
+      <th>SI. No</th>
+      <th>Col 1</th>
+      <th>Col 2</th>
+      <th>Col 3</th>
+      <th>col 4</th>
+      <th>Update</th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <tr *ngFor="let item of childTable; let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>
+        <input type="checkbox" [checked]="item.col1Checked">
+      </td>
+      <td>
+        <input type="checkbox" [checked]="item.col2Checked">
+      </td>
+      <td>
+        <input type="checkbox" [checked]="item.col3Checked">
+      </td>
+      <td>
+        <input type="checkbox" [checked]="item.col4Checked">
+      </td>
+      <td>
+        <button (click)="onUpdate(i)">Update</button>
+      </td>
+    </tr>
+  </tbody>
+</table>
+<app-form  [form]="form" (formSubmit)="onSubmitForm($event)"></app-form> 
