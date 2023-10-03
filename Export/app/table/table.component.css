@@ -1,0 +1,57 @@
+
+  h1 {
+    text-align: center; 
+    color: #b0045d;
+    font-family: sans-serif;
+  }
+  
+  table {
+    
+    width: 75%;
+    border-collapse: collapse;
+    margin:10px 10%;
+    font-family: sans-serif;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  th {
+    background-color: #bddcf9;
+    border: 2px solid #0c0101;
+  }
+  
+  tr, td {
+    background-color: #6ac3f7;
+    border: 2px solid #0c0101;
+   
+  }
+  
+  button {
+   margin:10px 10%;
+    color: #fff;
+    background-color: #05578a;
+    padding: 5px 15px;
+    border: 1px solid #030303;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  button:hover{
+    background-color: #cbeaf6;
+    color: #000;
+  }
+
+  .expo{
+    padding: 4px 6px;
+    border: 1px solid #000;
+    text-decoration: underline;
+    background-color: transparent;
+    border-radius: 3px;
+    font-weight: 100;
+    color: #2121f3; 
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+ 

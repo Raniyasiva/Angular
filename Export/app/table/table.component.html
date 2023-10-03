@@ -1,0 +1,60 @@
+<h1>Students Details</h1>
+<div>
+<button (click)="export()" class="expo">Export</button>
+</div>
+<table>
+  <thead>
+    <tr>
+      <th>SI. No</th>
+      <th>Name</th>
+      <th>Reg.No</th>
+      <th>Course</th>
+      <th>Gender</th>
+      <th>Grade</th>
+      <th>Export</th>
+      <th>Update</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of tables; let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{ item.parent1 }}</td>
+      <td>{{ item.parent2 }}</td>
+      <td>{{ item.parent3 }}</td>
+      <td>{{ item.parent4 }}</td>
+      <td>{{ item.parent5 }}</td>
+      <td>
+      <input type="checkbox" (change)="updateExport($event, item)" />
+      </td>
+      <td>
+      <button (click)="update(i) ; form()">Update</button>
+      </td>  
+    </tr>
+  </tbody>
+</table>
+
+<div *ngIf="isExport" >
+<h1 >Records of Exported Data</h1>
+<table >
+    <thead>
+      <tr>
+        <th>SI. No</th>
+        <th>Name</th>
+        <th>Reg.No</th>
+        <th>Course</th>
+        <th>Gender</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of exportedItems ; let i = index">
+        <td>{{ i + 1 }}</td>
+        <td>{{ item.parent1 }}</td>
+        <td>{{ item.parent2 }}</td>
+        <td>{{ item.parent3 }}</td>
+        <td>{{ item.parent4 }}</td>
+        <td>{{ item.parent5 }}</td>  
+      </tr>
+    </tbody>
+</table>
+</div>
