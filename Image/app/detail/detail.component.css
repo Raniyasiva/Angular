@@ -1,0 +1,19 @@
+.container{
+   display: flex;
+   border: 2px groove #000;
+   width: fit-content;
+   margin-bottom: 20px;
+   padding: 10px;
+}
+img{
+    height: 50px;
+   
+    border: 1px solid #000;
+    width: 50px;
+}
+.flex{
+    margin-left: 20px;
+}
+.image{
+    margin: 10px;
+}

@@ -1,0 +1,14 @@
+
+<h1>Employee Details</h1>
+<div class="container">
+  <div class="flex">
+  <p>Emp Name: {{ item.parent1 }}</p>
+  <p>Id No: {{ item.parent2 }}</p>
+  <p>Qualification: {{ item.parent3 }}</p>
+  <p>Gender: {{ item.parent4 }}</p>
+  <p>Experiance: {{ item.parent5 }}</p> 
+</div>
+<div class="image">
+    <img *ngIf="item.image" [src]="item.image" alt="Selected Image">
+  </div>
+</div>

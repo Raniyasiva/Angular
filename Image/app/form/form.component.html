@@ -1,0 +1,23 @@
+<h1>Registration Form</h1>
+
+<form>
+  
+<label for="input1">Emp Name:</label>
+<input [(ngModel)]="service.form.parent1" name="input1" /><br /><br>
+<label for="input2">Id No:</label>
+<input [(ngModel)]="service.form.parent2" name="input2" /><br /><br>
+<label for="input3">Qualification:</label>
+<input [(ngModel)]="service.form.parent3" name="input3" /><br /><br>
+<label for="input4">Gender:</label>
+<input [(ngModel)]="service.form.parent4" name="input4" /><br /><br>
+<label for="input5">Experiance:</label>
+<input [(ngModel)]="service.form.parent5" name="input5" /><br /><br>
+<div class="image">
+<label for="input6">Image:</label>
+<input type="file" class="image" (change)="onFileSelected($event)" name="input6" /><br /><br>
+</div>
+<button (click)="onSubmit() ; table()">Submit</button>
+
+</form>
+
+
