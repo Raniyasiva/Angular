@@ -1,0 +1,25 @@
+<p>form works!</p>
+
+<h1>Registration Form</h1>
+
+<form>
+  
+<label for="input1">Name:</label>
+<input [(ngModel)]="service.form.parent1" name="input1" /><br /><br>
+
+<label for="input2">Reg. No:</label>
+<input [(ngModel)]="service.form.parent2" name="input2" /><br /><br>
+
+<label for="input3">Course:</label>
+<input [(ngModel)]="service.form.parent3" name="input3" /><br /><br>
+
+<label for="input4">Gender:</label>
+<input [(ngModel)]="service.form.parent4" name="input4" /><br /><br>
+
+<label for="input5">Grade:</label>
+<input [(ngModel)]="service.form.parent5" name="input5" /><br /><br>
+
+<button (click)="onSubmit() ; table()">Submit</button>
+
+</form>
+

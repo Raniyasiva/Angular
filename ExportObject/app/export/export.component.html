@@ -1,0 +1,23 @@
+<h1>Records of Exported Data</h1>
+<table>
+  <thead>
+    <tr>
+      <th>SI. No</th>
+      <th>Name</th>
+      <th>Reg.No</th>
+      <th>Course</th>
+      <th>Gender</th>
+      <th>Grade</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let item of exportedItems; let i = index">
+      <td>{{ i + 1 }}</td>
+      <td>{{ item.parent1 }}</td>
+      <td>{{ item.parent2 }}</td>
+      <td>{{ item.parent3 }}</td>
+      <td>{{ item.parent4 }}</td>
+      <td>{{ item.parent5 }}</td>
+    </tr>
+  </tbody>
+</table>
