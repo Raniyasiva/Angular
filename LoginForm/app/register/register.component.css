@@ -1,0 +1,39 @@
+.content {
+  padding: 16px;
+  width: max-content;
+  text-align: center;
+  padding: 20px;  
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  width: 400px;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 595px;
+  background-color: #f1f1f1;
+  border-radius: 4px;
+
+}
+.head{
+  text-align: center;
+  flex: 1;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+mat-form-field {
+ flex: 1;
+  margin-right: 16px;
+}
+
+.action {
+  display: flex;
+  margin-top: 16px;
+ margin-left: 35%;
+}
