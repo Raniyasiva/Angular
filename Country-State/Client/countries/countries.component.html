@@ -1,0 +1,14 @@
+<h1>Countries</h1>
+<select [(ngModel)]="selectedCountry" (change)="updateStates()">
+    <option *ngFor="let country of countries" [value]="country.id">
+        {{ country.name }}
+    </option>
+</select>
+
+<h2>States</h2>
+<select >
+    <option *ngFor ="let state of states" [value]="state.id">
+        {{state.name}}
+    </option>
+</select>
+ 
