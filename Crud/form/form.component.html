@@ -1,0 +1,42 @@
+<form [formGroup]="contactForm" (ngSubmit)="onSubmit() ; table()">
+ 
+<div>
+
+    <label for="username">User Name </label>
+    <input type="text" [(ngModel)]="service.formdata.username" formControlName="username">
+    <br>
+
+    <div *ngIf="username?.invalid && username?.touched" >
+        <span *ngIf="username?.errors?.['required']">User Name is required</span>
+        <span *ngIf="username?.errors?.['minlength']">User Name must be at least 5 characters long</span>
+        <span *ngIf="username?.errors?.['pattern']">User Name should only contain alphabets</span>
+        <span *ngIf="username?.errors?.['maxLength']">User Name must be maximum characters of 10</span>
+    </div>
+    
+</div>
+
+    <div>
+        <label for="email">Email </label>
+        <input type="email" [(ngModel)]="service.formdata.email" name="email" formControlName="email">  
+        <br>
+        <div *ngIf="email?.invalid && email?.touched" >
+        <span *ngIf="email?.errors?.['required']">Email is required</span>
+        <span *ngIf="email?.errors?.['email']">Enter valid Email</span>
+        </div>
+    </div>
+
+     <div>
+        <label for="tel">Phone number</label>
+        <input type="tel" [(ngModel)]="service.formdata.tel"  name="tel" formControlName="tel">
+        <br>
+        <div *ngIf="tel?.invalid && tel?.touched">
+            <div *ngIf="tel?.errors?.['required']">Required Field</div>
+            <div *ngIf="tel?.errors?.['pattern']">Enter valid Phone number</div>
+        </div> 
+     </div>
+
+     <a routerLink="/table">signup</a>
+     <!-- <button type="submit" >SignUp</button> -->
+     <button type="submit">{{ service.editIndex !== null ? 'Update' : 'SignUp' }}</button>
+     <!-- <button (click)="onSave()">Save</button>  -->
+    </form>
