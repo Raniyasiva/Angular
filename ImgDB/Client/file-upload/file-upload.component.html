@@ -1,0 +1,11 @@
+<p>file-upload works!</p>
+<div>
+    <input type="file" (change)="onFileSelected($event)">
+    <button (click)="uploadFile()">Upload</button>
+</div>
+
+<table>
+    <tr *ngFor="let imageUrl of imageUrls">
+      <td><img [src]="imageUrl" alt="Image"></td>
+    </tr>
+</table>
